@@ -1,0 +1,48 @@
+.services-body{
+    background-image:url('../../../Assets/curve-shape.svg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    padding-top: 400px;
+    padding-bottom: 200px;
+}
+
+.services-card:hover{
+ box-shadow: 0 0 30px 1px #cecece;
+}
+.services-card:hover h4{
+ color: #0e59f2;
+}
+.service-name-inCard{
+    height: 140px;
+}
+.services-icon{
+    width:100px;
+    margin-bottom: 50px;
+    background-color: rgb(209, 205, 236);
+    padding: 10px;
+    border-radius: 10px;
+}
+.services-arrow{
+    /* background-color: red; */
+    color: #0e59f2;
+    font-weight: 500;
+    font-size: 45px;
+    transition: .3s ease-in-out;
+    width: 50px;
+    transform:rotate(-40deg);
+    display:block;
+    cursor: pointer;
+}
+.services-card:hover .services-arrow{
+    transform:rotate(-360deg);
+   }
+
+@media only screen and (max-width:768px) {
+.services-body{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.services-card{
+    margin-bottom: 20px;
+}
+}

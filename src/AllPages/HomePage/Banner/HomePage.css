@@ -1,0 +1,89 @@
+.banner-body{
+    background-image: linear-gradient(-180deg, #a2a1e2, #ffffff);
+    height: 100vh;
+}
+.banner-content{
+    padding-top: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.banner-leftside{
+width: 50%;
+text-align: left;
+}
+.banner-rightside{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+}
+.banner-rightside img{
+position: relative;
+top: 0px;
+left: 20px;
+width: 90%;
+z-index: 2;
+}
+.banner-rightside::before {
+    position: absolute;
+    content: "";
+    left: 25%; 
+    bottom: 5%;
+    width: 70%;
+    height: 100%;
+    border: 1px solid#0e59f2;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index:1;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+
+.banner-rightside::after {
+    position: absolute;
+    content: "";
+    left: 12%;
+    bottom: 4%;
+    width: 70%;
+    height: 100%;
+    border: 2px solid #f3fbfd;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape2 5s linear infinite;
+    display: block;
+    z-index: 1;
+    -webkit-animation: sliderShape2 5s linear infinite;
+}
+@keyframes sliderShape{
+    0%   {border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;}
+    50%  {border-radius:35% 82% 47% 62% / 66% 80% 45% 46%;}
+}
+@keyframes sliderShape2{
+    0%   {border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;}
+    50%  {border-radius:35% 82% 47% 62% / 66% 80% 45% 46%;}
+}
+
+@media only screen and (max-width:768px) {
+    .banner-body{
+        height: auto;
+    }
+    .banner-content{
+        padding-top: 150px;
+        flex-direction: column;
+    }
+    .banner-leftside{
+        width: 100%;
+        text-align:center;
+       }
+    .banner-rightside{
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    .point-mobile{
+        display: none;
+    }
+}
