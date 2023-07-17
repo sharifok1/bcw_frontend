@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from "../../Assets/logo.png";
 import './Navbar.css'
 import { Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -31,21 +32,30 @@ const Navbar = () => {
                             <img src={logo} alt="" />
                         </div>
                     <ul className="navbar-nav">
-
                         <li className="nav-items">
-                        <a href="#home" className="nav-link">Home</a>
+                            <NavLink
+                             className="nav-link"
+                             to="/home">Home</NavLink>
                         </li>
                         <li className="nav-items">
-                        <a href="#services" className="nav-link">About</a>
+                            <NavLink 
+                            className="nav-link"
+                            to="/">Our Services</NavLink>
                         </li>
                         <li className="nav-items">
-                        <a href="#help" className="nav-link">Service</a>
+                            <NavLink 
+                            className="nav-link"
+                            to="/">Our Projects</NavLink>
                         </li>
                         <li className="nav-items">
-                        <a href="#contact" className="nav-link">Our Projects</a>
+                            <NavLink 
+                            className="nav-link"
+                            to="/">About Us</NavLink>
                         </li>
                         <li className="nav-items">
-                        <a href="#projects" className="nav-link">Contact</a>
+                            <NavLink 
+                            className="nav-link"
+                            to="/">Contact</NavLink>
                         </li>
                     </ul>
                     </div>

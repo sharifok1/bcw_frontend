@@ -6,6 +6,7 @@ import dev from "../../../Assets/dev.png";
 import arch from "../../../Assets/arch.png";
 import uiux from "../../../Assets/uiux.png";
 import graphic from "../../../Assets/grapichDesign.png";
+import { NavLink } from 'react-router-dom';
 
 
 const OurServices = () => {
@@ -34,10 +35,19 @@ const OurServices = () => {
                             <Card className='p-5 pb-4 text-start services-card'>
                                 <img className='services-icon' src={dev} alt="" />
                                 <div className='service-name-inCard'>
-                                    <h4 className='mb-4'>Web Development</h4>
+                                   <NavLink 
+                                   className="link-style"
+                                   to="/webService" >
+                                        <h4 className='mb-4'>Web Development</h4>
+                                   </NavLink>
+                                    
                                     <p className='description_text'>Make your website with latest technology</p>
                                 </div>
-                                <i className='services-arrow'>&rarr;</i>
+                                <NavLink 
+                                className="services-arrow"
+                                to="/webService">
+                                    <i>&rarr;</i>
+                                </NavLink>
                             </Card>
                         </Col>
                         <Col sm={12} md={6} xl={3}>

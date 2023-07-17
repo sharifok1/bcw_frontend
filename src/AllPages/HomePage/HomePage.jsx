@@ -1,6 +1,4 @@
 import React from 'react';
-// import Banner from '../Banner/Banner';
-// import OurServices from './OurServices/OurServices';
 import Footer from '../../Share/Footer/Footer';
 import Banner from './Banner/Banner';
 import OurServices from './OurServices/OurServices';

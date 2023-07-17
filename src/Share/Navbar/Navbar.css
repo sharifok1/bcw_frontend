@@ -4,10 +4,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    color: #5476e6;
+    /* color: #5476e6; */
     padding: 20px;
     transition: all .5s ease;
-    background-image:linear-gradient(to bottom, #a2a1e2, #b0afea);
+    /* background-image:linear-gradient(to bottom, #a2a1e2, #b0afea); */
     z-index: 5;
   }
   
@@ -76,7 +76,7 @@
   }
   
   .nav-link {
-    color: #3d3d3d;
+    color: #413f3f;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -84,12 +84,13 @@
   }
   
   .nav-link:hover {
-    color: #909090;
+    color: #2d75f2;
   }
   
   @media only screen and (max-width: 768px) {
     .custom-navbar {
       position: fixed;
+      background-image:linear-gradient(to bottom, #a2a1e2, #b0afea);
     }
 
     .navbar-toggle {
@@ -126,11 +127,7 @@
       margin-bottom: 10px;
       margin: 0;
     }
-    .nav-items a{
-        color: #111;
-        font-size: 18px;
-        font-weight: 500;
-    }
+
     .brand-logo{
         background-color: #d4eceb;
         width: 245px;
