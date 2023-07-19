@@ -54,22 +54,40 @@ const OurServices = () => {
                             <Card className='p-5 pb-4 text-start services-card'>
                                 <img className='services-icon' src={arch} alt="" />
                                <div className='service-name-inCard'>
+                               <NavLink 
+                                   className="link-style"
+                                   to="/architecService" >
                                     <h4 className='mb-4'>2D & 3D Design Architecture</h4>
-                                    <p className='description_text'>Make your website with latest technology</p>
+                                </NavLink>
+                                    <p className='description_text'>Discover the Art of Architecture: 2D & 3D</p>
                                </div>
+                               <NavLink 
+                                className="services-arrow"
+                                to="/architecService">
                                 <i className='services-arrow'>&rarr;</i>
+                                </NavLink>
                             </Card>
                         </Col>
+                       
                         <Col sm={12} md={6} xl={3}>
                             <Card className='p-5 pb-4 text-start services-card'>
                                 <img className='services-icon' src={graphic} alt="" />
                                 <div className='service-name-inCard'>
+                                <NavLink 
+                                   className="link-style"
+                                   to="/graphicsService" >
                                     <h4 className='mb-4'>Graphic Design</h4>
+                                </NavLink>
                                     <p className='description_text'>Make your website with latest technology</p>
                                 </div>
+                                <NavLink 
+                                className="services-arrow"
+                                to="/graphicsService">
                                 <i className='services-arrow'>&rarr;</i>
+                                </NavLink>
                             </Card>
                         </Col>
+                      
                         <Col sm={12} md={6} xl={3}>
                             <Card className='p-5 pb-4 text-start services-card'>
                                 <img className='services-icon' src={uiux} alt="" />

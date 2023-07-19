@@ -50,8 +50,8 @@ const Footer = () => {
                             </div>
 
                             <div className='footer-icon'>
-                               <p><i class="fa-solid fa-phone-volume"></i> +1 xxx xxx</p> 
-                              <p><i class="fa-sharp fa-solid fa-envelope"></i> info.bcw@gmail.com </p>
+                               <p><i className="fa-solid fa-phone-volume"></i> +1 xxx xxx</p> 
+                              <p><i className="fa-sharp fa-solid fa-envelope"></i> info.bcw@gmail.com </p>
 
                             </div>
                             </Col>

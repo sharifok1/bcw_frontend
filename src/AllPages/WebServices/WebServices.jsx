@@ -2,15 +2,57 @@ import React from 'react';
 import Navbar from '../../Share/Navbar/Navbar';
 import './WebServices.css'
 import { Col, Container, Row } from 'react-bootstrap';
-import web1 from '../../Assets/webProject/web1.jpg'
-import web2 from '../../Assets/webProject/web2.jpg'
-import web3 from '../../Assets/webProject/web3.jpg'
-import web4 from '../../Assets/webProject/web4.jpg'
-import web5 from '../../Assets/webProject/web5.jpg'
-import web6 from '../../Assets/webProject/web6.jpg'
 import Footer from '../../Share/Footer/Footer';
 
 const WebServices = () => {
+    
+    const webProjectData = [
+        {
+            img:'https://i.ibb.co/zht798s/web1.jpg',
+            projectName:'Femme Wear BD',
+            servicesType:'Web design & development',
+            frontend:'HTML, CSS, Reactjs, React Bootstrap',
+            backend:'MongoDB, Node.js, ExpressJS',
+            live_visit:"https://www.femmewearbd.com"
+        },
+        {
+            img:'https://i.ibb.co/jTrkzHS/web2.jpg',
+            projectName:'FREEDEN',
+            servicesType:'Frontend Development',
+            frontend:'HTML, CSS, Reactjs and Bootstrap',
+            live_visit:"https://freeden.io/"
+        },
+        {
+            img:'https://i.ibb.co/7Nt1hfM/web3.jpg',
+            projectName:'META ARABS',
+            servicesType:'Frontend Development',
+            frontend:'HTML, CSS, JavaScript and Bootstrap',
+            live_visit:"https://www.metaarabs.io/"
+        },
+        {
+            img:'https://i.ibb.co/L17B81g/web4.jpg',
+            projectName:'Willcox Energy',
+            servicesType:'Frontend Development',
+            frontend:'HTML, CSS, ReactJs, Bootstrap', 
+            live_visit:"https://wcenergy.netlify.app/"
+        },
+        {
+            img:'https://i.ibb.co/ZGgxY9n/web5.jpg',
+            projectName:'Meta Games',
+            servicesType:'Frontend Development',
+            frontend:'HTML, CSS, Reactjs, React Bootstrap',
+            live_visit:"https://metagamming.netlify.app"
+        },
+        {
+            img:'https://i.ibb.co/nj5JK5q/web6.jpg',
+            projectName:'Decentralized',
+            servicesType:'Frontend Development',
+            frontend:'HTML, CSS, Reactjs, React Bootstrap',
+            live_visit:"https://echosystem-home.netlify.app",
+        }
+    ]
+
+
     return (
         <div>
             <Navbar/>
@@ -25,129 +67,36 @@ const WebServices = () => {
                  Our <span className='text-primary'>Portfolio</span> 
             </p>
             <Row className='m-0 py-5'>
-                <Col sm={12} md={6}>
+                {
+                  
+                  webProjectData.map((projects,key)=><Col sm={12} md={6} key={key}>
                     <div className='web-show'>
-                        <img src={web1} alt="" />
+                        <img src={projects?.img} alt="project-screenshot" />
                         <div className='project-detail-cards pt-5'>
-                            <p className='fs-4 fw-semibold'>Femme Wear BD</p>
-                            <p>
-                                <span className='fw-semibold'>Service: </span>Web design & development <br />
-                                <span className='fw-semibold'>Frontend: </span>HTML, CSS, Reactjs, React Bootstrap<br />
-                                <span className='fw-semibold'>Backend: </span>MongoDB, Node.js, ExpressJS<br />
+                            <p className='fs-4 fw-semibold'>{projects?.projectName}</p>
+                            <div>
+                                <span className='fw-semibold'>Service: </span>{projects.servicesType}<br />
+                                <span className='fw-semibold'>Frontend: </span>{projects.frontend}<br />
+                                {projects.backend?
+                               <p><span className='fw-semibold'>Backend: </span>{projects.backend}</p>:<></>}
                                 <span className='fw-semibold'>Live visit: </span>
                                 <a 
                                     className='text-white'
                                     target="_blank" rel='noreferrer'
-                                    href="https://www.femmewearbd.com">
-                                        www.femmewearbd.com
+                                    href={projects.live_visit}>
+                                        {projects.live_visit}
                                 </a><br />
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={6}>
-                    <div className='web-show'>
-                        <img src={web2} alt="" />
-                        <div className='project-detail-cards pt-5'>
-                            <p className='fs-4 fw-semibold'>FREEDEN</p>
-                            <p>
-                                <span className='fw-semibold'>Service: </span>Frontend Development <br />
-                                <span className='fw-semibold'>Frontend: </span>HTML, CSS, Reactjs,Bootstrap<br />
-                                <span className='fw-semibold'>Live visit: </span>
-                                <a 
-                                    className='text-white'
-                                    target="_blank" rel='noreferrer'
-                                    href="https://freeden.io/">
-                                        https://freeden.io/
-                                </a><br />
-                            </p>
-                        </div>
-                    </div>
-                </Col>
-                <Col sm={12} md={6}>
-                    <div className='web-show'>
-                        <img src={web3} alt="" />
-                        <div className='project-detail-cards pt-5'>
-                            <p className='fs-4 fw-semibold'>META ARABS</p>
-                            <p>
-                                <span className='fw-semibold'>Service: </span>Frontend Development <br />
-                                <span className='fw-semibold'>Frontend: </span>HTML, CSS,JavaScript,Bootstrap<br />
-                                <span className='fw-semibold'>Live visit: </span>
-                                <a 
-                                    className='text-white'
-                                    target="_blank" rel='noreferrer'
-                                    href="https://www.metaarabs.io/">
-                                        https://www.metaarabs.io/
-                                </a><br />
-                            </p>
-                        </div>
-                    </div>
-                </Col>
-                <Col sm={12} md={6}>
-                    <div className='web-show'>
-                        <img src={web4} alt="" />
-                        <div className='project-detail-cards pt-5'>
-                            <p className='fs-4 fw-semibold'>Willcox Energy</p>
-                            <p>
-                                <span className='fw-semibold'>Service: </span>Frontend Development <br />
-                                <span className='fw-semibold'>Frontend: </span>HTML, CSS, ReactJs, Bootstrap<br />
-                                <span className='fw-semibold'>Live visit: </span>
-                                <a 
-                                    className='text-white'
-                                    target="_blank" rel='noreferrer'
-                                    href="https://wcenergy.netlify.app/">
-                                       https://wcenergy.netlify.app/
-                                </a><br />
-                            </p>
-                        </div>
-                    </div>
-                </Col>
-                <Col sm={12} md={6}>
-                    <div className='web-show'>
-                        <img src={web5} alt="" />
-                        <div className='project-detail-cards pt-5'>
-                            <p className='fs-4 fw-semibold'>Meta Games</p>
-                            <p>
-                                <span className='fw-semibold'>Service: </span>Frontend Development <br />
-                                <span className='fw-semibold'>Frontend: </span>HTML, CSS, ReactJs, Bootstrap<br />
-                                <span className='fw-semibold'>Live visit: </span>
-                                <a 
-                                    className='text-white'
-                                    target="_blank" rel='noreferrer'
-                                    href="https://metagamming.netlify.app">
-                                       https://metagamming.netlify.app
-                                </a><br />
-                            </p>
-                        </div>
-                    </div>
-                </Col>
-                <Col sm={12} md={6}>
-                    <div className='web-show'>
-                        <img src={web6} alt="" />
-                        <div className='project-detail-cards pt-5'>
-                            <p className='fs-4 fw-semibold'>Decentralized</p>
-                            <p>
-                                <span className='fw-semibold'>Service: </span>Frontend Development <br />
-                                <span className='fw-semibold'>Frontend: </span>HTML, CSS, ReactJs, Bootstrap<br />
-                                <span className='fw-semibold'>Live visit: </span>
-                                <a 
-                                    className='text-white'
-                                    target="_blank" rel='noreferrer'
-                                    href=" https://echosystem-home.netlify.app">
-                                       https://echosystem-home.netlify.app
-                                </a><br />
-                            </p>
-                        </div>
-                       
-                    </div>
-                </Col>
+                  )  
+                }
             </Row>
         </Container>
             
-
           <Footer/>  
         </div>
     );
 };
-
 export default WebServices;
