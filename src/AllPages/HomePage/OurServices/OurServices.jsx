@@ -21,7 +21,7 @@ const OurServices = () => {
                         <span className='text-primary'> &#9632; </span>
                     </p>
                     <p className='primary-heading'>
-                    Service We Provide
+                    Services we provide
                     </p>
                     <p className='description_text'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi obortis ligula <br /> euismod sededesty am augue nisl.
