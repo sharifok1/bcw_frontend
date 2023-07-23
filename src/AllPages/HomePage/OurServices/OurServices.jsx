@@ -41,7 +41,7 @@ const OurServices = () => {
                                         <h4 className='mb-4'>Web Development</h4>
                                    </NavLink>
                                     
-                                    <p className='description_text'>Make your website with latest technology</p>
+                                    <p className='description_text'>From design to deployment, we create tailored solutions that elevate your online presence and drive success.</p>
                                 </div>
                                 <NavLink 
                                 className="services-arrow"
@@ -78,7 +78,7 @@ const OurServices = () => {
                                    to="/graphicsService" >
                                     <h4 className='mb-4'>Graphic Design</h4>
                                 </NavLink>
-                                    <p className='description_text'>Make your website with latest technology</p>
+                                    <p className='description_text'>Craft compelling visuals that leave a lasting impression and elevate your brand identity to new heights</p>
                                 </div>
                                 <NavLink 
                                 className="services-arrow"
@@ -93,7 +93,7 @@ const OurServices = () => {
                                 <img className='services-icon' src={uiux} alt="" />
                                 <div className='service-name-inCard'>
                                     <h4 className='mb-4'>UX/UI Design</h4>
-                                    <p className='description_text'>Make your website with latest technology</p>
+                                    <p className='description_text'>Combine creativity and empathy to create intuitive and visually appealing interfaces</p>
                                 </div>
                                 <i className='services-arrow'>&rarr;</i>
                             </Card>
