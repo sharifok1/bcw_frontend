@@ -2,7 +2,7 @@
     background-image:url('../../../Assets/curve-shape.svg');
     background-repeat: no-repeat;
     background-size:100%;
-    padding-top: 400px;
+    padding-top: 300px;
     padding-bottom: 200px;
 }
 
@@ -13,7 +13,11 @@
  color: #0e59f2;
 }
 .service-name-inCard{
-    height: 140px;
+    position: relative;
+    height: 250px;
+}
+.service-des{
+    text-align: justify;
 }
 .services-icon{
     width:100px;
@@ -23,16 +27,17 @@
     border-radius: 10px;
 }
 .services-arrow{
-    /* background-color: red; */
+    position: absolute;
     text-decoration: none;
     color: #0e59f2;
     font-weight: 500;
     font-size: 45px;
     transition: .3s ease-in-out;
     width: 50px;
-    transform:rotate(-40deg);
+    transform:rotate(0deg);
     display:block;
     cursor: pointer;
+    bottom: 0;
 }
 .services-card:hover .services-arrow{
     transform:rotate(-360deg);
@@ -45,5 +50,8 @@
 }
 .services-card{
     margin-bottom: 20px;
+}
+.service-name-inCard{
+    height: auto;
 }
 }
