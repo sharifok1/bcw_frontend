@@ -19,7 +19,7 @@ const Banner = () => {
                         <span className='text-primary'> Technology</span>
                     </p>
                     <p className='description_text'> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, facilis. Ipsam non, vitae deserunt enim beatae fugit illo ab quod sequi ut nesciunt, omnis maxime qui expedita animi, minus molestiae fugiat vero hic magnam! Architecto, est fuga ut quo, nobis incidunt.
+                        Welcome to Bridge Canada and World, where we bring your ideas to life through stunning 3D modeling, captivating graphic design, and seamless front-end website design.
                     </p>
                     <ul className='point_text point-mobile'>
                         <li>Amazing Communication</li>
