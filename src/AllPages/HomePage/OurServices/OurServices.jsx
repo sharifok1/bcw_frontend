@@ -24,7 +24,7 @@ const OurServices = () => {
                     Services we provide
                     </p>
                     <p className='description_text'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi obortis ligula <br /> euismod sededesty am augue nisl.
+                    Unlock your creative vision with our comprehensive services in 3D modeling, graphic design, and front-end website design, tailored to elevate your brand and captivate your audience.
                     </p>
                    </div>
 
