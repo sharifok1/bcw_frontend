@@ -4,6 +4,7 @@ import './App.css';
 import WebServices from './AllPages/WebServices/WebServices';
 import ArchitecService from './AllPages/ArchitecService/ArchitecService';
 import GraphicsService from './AllPages/GraphicsService/GraphicsService';
+import ServiceDetails from './AllPages/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/webService' element={<WebServices/>}/>
         <Route path='/architecService' element={<ArchitecService/>}/>
         <Route path='/graphicsService' element={<GraphicsService/>}/>
+        <Route path='/serviceDetails' element={<ServiceDetails/>}/>
       </Routes>
       
     </div>
