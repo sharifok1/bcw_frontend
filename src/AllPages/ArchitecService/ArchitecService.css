@@ -1,0 +1,67 @@
+.architech-body{
+    position: relative;
+    background-image:url("../../Assets/architec/background.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+.architech-body::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.471);
+    z-index: 0;
+}
+.arch-service-heading{
+        position: relative;
+}
+.arch-heading{
+    color: rgb(255, 255, 255);
+    z-index: 1 ;
+}
+.arch-service-heading:before {
+    content: "";
+    position: absolute;
+    mask-image: url(../../Assets/bg-shape-before.svg);
+    -webkit-mask-image: url(../../Assets/bg-shape-before.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    height:60%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -250px;
+    background: rgb(51, 51, 228);
+    z-index: 11;
+}
+.arch-service-heading:after {
+    content: "";
+    position: absolute;
+    mask-image: url(../../Assets/bg-shape.svg);
+    -webkit-mask-image: url(../../Assets/bg-shape.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: top;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    height: 45%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -240px;
+    background: #ffffff;
+}
+
+.arc-project-img{
+    width: 100%;
+}
