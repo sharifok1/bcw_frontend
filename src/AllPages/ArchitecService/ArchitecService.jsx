@@ -12,7 +12,7 @@ const ArchitecService = () => {
             <div className='architech-body'>
                 <div className='arch-service-heading'>
                     <Container>
-                    <p className='primary-heading arch-heading text-start w-50'>
+                    <p className='primary-heading arch-heading text-start'>
                         Elevate Your Spaces with Expert 2D & 3D <br /> Design Architecture Solutions
                     </p>
                     </Container>

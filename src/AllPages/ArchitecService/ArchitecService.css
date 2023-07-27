@@ -65,3 +65,49 @@
 .arc-project-img{
     width: 100%;
 }
+
+@media only screen and (min-width:900px){
+    .arch-heading{
+width: 50%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .arch-service-heading:before {
+        content: "";
+        position: absolute;
+        mask-image: url(../../Assets/bg-shape-before.svg);
+        -webkit-mask-image: url(../../Assets/bg-shape-before.svg);
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-position: bottom;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        height:20%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: -100px;
+        background: rgb(51, 51, 228);
+        z-index: 11;
+    }
+    .arch-service-heading:after {
+        content: "";
+        position: absolute;
+        mask-image: url(../../Assets/bg-shape.svg);
+        -webkit-mask-image: url(../../Assets/bg-shape.svg);
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-position: top;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        height: 10%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: -80px;
+        background: #ffffff;
+    }
+}
