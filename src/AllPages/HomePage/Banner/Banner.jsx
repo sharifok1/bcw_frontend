@@ -3,6 +3,7 @@ import './HomePage.css'
 import bannerImg from '../../../Assets/bannerImage.png';
 import { Container} from 'react-bootstrap';
 import Navbar from '../../../Share/Navbar/Navbar';
+import video from '../../../Assets/glovbeVideo.mp4'
 
 const Banner = () => {
     return (
@@ -31,9 +32,23 @@ const Banner = () => {
 
                    </div>
 
-                   <div className='banner-rightside'>
+                   {/* <div className='banner-rightside'>
                         <img src={bannerImg} alt="" />
-                   </div>
+                   </div> */}
+                    <div className='video-wrapper'>
+                        <div className='video-container'>
+                        <video 
+                           className='video'
+                            controls={false}
+                            autoPlay 
+                            muted 
+                            loop
+                            >
+                            <source src={video} type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
+                        </div>
+                        </div>
                 </div>
             </Container>
             <div>

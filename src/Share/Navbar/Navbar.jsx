@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../../Assets/logo.png";
 import './Navbar.css'
-import { Container } from 'react-bootstrap';
+import { Container, Dropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -37,15 +37,53 @@ const Navbar = () => {
                              className="nav-link"
                              to="/home">Home</NavLink>
                         </li>
+                        {/* <li className="nav-items">
+                            <NavLink 
+                            className="nav-link"
+                            to="/serviceDetails">Our Services</NavLink>
+                        </li> */}
+                        <li>
+                        <Dropdown >
+                            <Dropdown.Toggle className='nav-dropdown'>
+                                Our Projects
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item>
+                                <NavLink
+                                    className="nav-link"
+                                    to="/webService">Web Development
+                                </NavLink>
+                                </Dropdown.Item>
+                                
+                                <Dropdown.Item>
+                                <NavLink
+                                    className="nav-link"
+                                    to="/architecService">2D & 3D Design Architecture
+                                </NavLink>  
+                                </Dropdown.Item>
+
+                                <Dropdown.Item>
+                                <NavLink
+                                    className="nav-link"
+                                    to="/graphicsService">Graphics Desing
+                                </NavLink>                        
+                                </Dropdown.Item>
+
+                                <Dropdown.Item>
+                                <NavLink
+                                    className="nav-link"
+                                    to="/uxUiService">UX/UI Design
+                                </NavLink>
+                                </Dropdown.Item>
+                            </Dropdown.Menu>    
+                        </Dropdown>
+
+                    </li>
                         <li className="nav-items">
                             <NavLink 
                             className="nav-link"
                             to="/serviceDetails">Our Services</NavLink>
-                        </li>
-                        <li className="nav-items">
-                            <NavLink 
-                            className="nav-link"
-                            to="/">Our Projects</NavLink>
                         </li>
                         <li className="nav-items">
                             <NavLink 

@@ -50,8 +50,12 @@
 }
 .services-card{
     margin-bottom: 20px;
+    padding-bottom: 50px !important;
 }
 .service-name-inCard{
     height: auto;
+}
+.services-arrow{
+    bottom: -50px;
 }
 }
